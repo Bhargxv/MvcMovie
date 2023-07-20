@@ -1,0 +1,14 @@
+﻿@{
+	int a = (int)ViewData["a"];
+	int b = (int)ViewData["b"];
+
+	int result = a + b;
+}
+@if(a==0 && b ==0)
+{
+	<p>Please pass 2 numbers as "a" and "b" to know the sum!</p>
+}
+
+@if(a!=0 && b!=0){
+<p>The Result of adding @a and @b is @result</p>
+}
